@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier2</title>
+</head>
+<body>
+    <div style="border: solid black 1px;width: 300px;">
+        <h1 style="margin-top: 0;">formulaire</h1>
+            <div>
+                <label for="nom">Nom: </label>
+                <input type="text" id="nom" autofocus="autofocus">(*)
+            </div>
+            <div>
+                <label for="res">Résidence: </label>
+                <input type="text" id="res">(*)
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" id="age" min="18">
+            </div>
+            <div>
+                <label>Langue Parlée: </label>
+                <input type="checkbox" class="cb" id="fr" value="francais">
+                <label for="fr">Fr</label>
+                <input type="checkbox" class="cb" id="ar" value="arabe">
+                <label for="ar">Ar</label>
+                <input type="checkbox" class="cb" id="eng" value="anglais">
+                <label for="eng">Eng</label>
+            </div>
+            <div>
+                <label for="prof">Profession: </label>
+                <select id="prof">
+                    <option value="0">Selectionner une option</option>
+                </select>
+            </div>
+            <div>
+                <label>Formulaire: </label>
+                <button type="submit" onclick="validerRemove(),valider()">Envoyer</button>
+                <button type="reset">Interrompre</button>
+            </div>
+    </div>
+    <div id="d1"></div>
+    <script src="main.js"></script>
+</body>
+</html>

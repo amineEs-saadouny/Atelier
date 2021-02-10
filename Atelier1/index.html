@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier</title>
+</head>
+<body>
+    <div>
+        <div >
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" onclick="nomevalidremove()">
+        </div>
+        <div id="div1" ></div>
+    </div>
+       <div>
+            <div >
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" onclick="passvalidremove()">
+            </div>
+            <div id="div2"></div>
+       </div>     
+            
+        <div>
+            <label for="afficher">Afficher Div:</label>
+            <label for="oui">oui
+                <input type="radio" name="affi" onclick="undisableVille()" checked="checked">
+            </label>
+            <label for="no">no
+                <input type="radio" name="affi" onclick="disableVille()">
+            </label>
+        </div>
+        <div style="background-color: red;border: solid black 1px;">
+            <label for="cho">choisir une ville:</label>
+            <select name="cho" id="cho" onclick="optionValidatioRemove()">
+                <option value="0">Select</option>
+                <option value="1">Beni Mellal</option>
+                <option value="2">Merrakch</option>
+                <option value="3">Casa</option>
+            </select>
+        </div>
+        <div id="div3"></div>
+        <button type="button" onclick="nomevalid(),passvalid(),optionValidatio()">Se Connecter</button>
+        <input type="reset" value="Annuler">
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
